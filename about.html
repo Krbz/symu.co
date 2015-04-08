@@ -1,0 +1,28 @@
+	<ng-dir-loading></ng-dir-loading>
+
+	<ng-dir-loginform ng-show="loginPop"></ng-dir-loginform>
+
+	<ng-dir-signform ng-show="signPop"></ng-dir-signform>
+
+<section ng-show="!loading">
+		
+		<nav my-nav></nav>
+
+<h1>About</h1>
+
+
+
+<form  name="regForm">
+	<input type="email" name="email" placeholder="Email" ng-model="user.email" required="">
+	<p ng-show="regForm.email.$invalid">Enter a valid email.</p>
+	<input type="password" name="password" ng-model="user.password" placeholder="Password" ng-minlength="8" required="">
+	<p ng-show="regForm.password.$error.minlength">Min password length is 8 characters.</p>
+	<input type="submit" name="" value="Submit it" ng-disabled="!user.email || !user.password" ng-click="signIn($event)">
+</form>
+
+
+</section>
+
+	<footer style="background: #333; color: #fff;" ng-show="!loading">
+		<ng-dir-footer></ng-dir-footer>
+	</footer>

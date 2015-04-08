@@ -1,0 +1,12 @@
+<div id="loginForm" ng-controller="FormCtrl">
+	<form ng-submit="submit()">
+		<a ng-click="$parent.loginPop = !$parent.loginPop">Close X</a>
+		<ul> 
+			<li>Login in: </li>
+			<li><input type="email" placeholder="Type an email"></li>
+			<li><input type="password" placeholder="Type a password"></li>
+			<li><input type="submit" ng-click="logged = !logged" name="" value="Sign up!"></li>
+		</ul>
+	</form>
+
+</div>

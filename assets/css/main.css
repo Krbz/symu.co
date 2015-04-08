@@ -1,0 +1,300 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+body {
+	/*font-family: 'Roboto', serif;*/
+	font-family: 'Lato', sans-serif;
+	position: relative;
+}
+ul li {
+	list-style: none;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+
+
+/**/
+
+.bg {
+	background: #ccc;
+	margin: 50px 50px;
+	width: 300px;
+	overflow: scroll;
+}
+nav {
+	background: #333;
+}
+nav img {
+	width: 200px;
+	display: inline-block;
+}
+nav ul {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+}
+nav ul li {
+	display: inline-block;
+	padding: 5px 15px;
+}
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.signUpBtn {
+	font-weight: bold;
+	padding: 5px 20px;
+	background: #d22e3e;
+	color: #fff;
+	border-radius: 3px 3px;
+}
+
+
+
+#header {
+	color: #fff ;
+	background-color: #333;
+	background-image: url('https://symu.co/app/plugins/wp/resources/img/bg-top.jpg');
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+#header h2 {
+	font-size: 4em;
+	font-weight: 200;
+	line-height: 1em;
+}
+#header h2 strong {
+	display: block;
+	font-weight: 900;
+}
+#header h3 {
+	font-size: 1.5em;
+	font-weight: 100;
+	color: #ccc;
+}
+#header div.uploderBtn {
+	margin: 50px auto 50px auto;
+	width: 200px;
+	height: 70px;
+}
+#header input {
+	opacity: 1;
+	padding: 25px 25px;	
+}
+.uploderBtn {
+	font-weight: bold;
+	background: #3157ad;
+	color: #fff;
+	border-radius: 5px 5px;
+}
+.uploaderBtn:hover {
+	background: #3157AD;
+}
+
+article:nth-child(2n+1) {
+	background: #F0F1F4;
+}
+article:not(#header) div {
+	width: 47%;
+	display: inline-block;
+	vertical-align: top;
+}
+article:not(#header) div h2 {
+	font-size: 1.87em;
+	color: #777;
+	padding: 20px 0px;
+
+}
+article:not(#header) div h2 strong {
+	display: block;
+	color: #333;
+}
+article:not(#header) div p {
+	display: block;
+	width: 50%;
+	font-size: 1.3em;
+}
+article:not(#header) div span {
+	display: block;
+	padding: 20px 0px;
+	font-size: 1.5em;
+	color: #aaa;
+}
+
+
+
+
+#signForm, #loginForm {
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	padding-top: 10%;
+}
+#signForm form, #loginForm form {
+	width: 30%;
+	background: #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+#signForm form input, #loginForm form input {
+	width: 80%;
+}
+
+
+
+
+
+/*projects style*/
+.projects-list {
+	width: 100%;
+	text-align: center;
+}
+.project-min-view {
+	display: inline-block;
+	margin: 2px 2px;
+	width: 150px;
+	height: 200px;
+	background-image: url('http://placehold.it/150x200');
+	border: 1px solid #333;
+	position: relative;
+}
+.project-tag {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	border: 1px solid #333;
+	background: #fff;
+}
+.project-expand {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+/*project in projects*/
+.project-menu {
+	width: 50px;
+	height: 100vh;
+	background: #ddd;
+	z-index: 999;
+	position: fixed;
+	left: 0;
+	top:0;
+}
+.project-view-box {
+	width: 100%;
+	height: 1000px;
+	background: #fff;
+	text-align: center;
+}
+.project-view-box img {
+	cursor: crosshair;
+}
+
+#projectArea {
+	position: relative;
+	width: 550px;
+	margin: 0 auto;
+}
+	/*pins */
+
+.pinContainer {
+	position: absolute;
+	background: #2351A3;
+	width: 30px;
+	height: 20px;
+	border-radius: 50px;
+	color: #fff;
+	padding-top: 8px;
+	font-size: 0.8em;
+	cursor: pointer;
+}
+.commentArea {
+	border: 1px solid #333;
+	background: #fff;
+	margin-top: -5px;
+	margin-left: 25px;
+	width: 200px;
+	text-align: left;
+	border-radius: 5px 5px 5px 5px;
+}
+.commentArea .comment-list {
+	width: 90%;
+	min-height: 0;
+	color: #000;
+	padding: 5px 10px;
+}
+.commentArea .comment-list p.comment-text {
+	font-size: 1.1em;
+}
+.commentArea .comment-list p.comment-signature {
+	font-size: 0.7em;
+	margin-top: 10px;
+	border: 1px solid orangered;
+	border-radius: 5px 5px;
+	padding: 5px 5px;
+	text-align: right;
+}
+/*.commentArea input {*/
+	/*width: 80%;*/
+	/*padding: 10px 15px;*/
+	/*outline: none;*/
+	/*border: none;*/
+/*}*/
+.comments-container {
+	min-height: 0px;
+	max-height: 200px;
+	overflow: scroll;
+}
+.commentArea input, .commentArea textarea {
+	width: 85%;
+	padding: 10px 15px;
+	outline: none;
+	border: none; resize: none;
+}
+.commentArea input[type="button"] {
+	width: 100%;
+	padding: 10px 15px;
+	background: #FFE96E;
+	cursor: pointer;
+}
+#xcascadasd {
+	left: 50px;
+	top: 200px;
+}
+#sdsdadasd {
+	left: 500px;
+	top: 10px;
+}
+
+
+
+
+
+
+
+
+#loading {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 45%;
+	text-align: center;
+}
+.breaker {
+	display: block;
+}
+.displayNone {
+	display: none;
+}

@@ -1,0 +1,82 @@
+	<ng-dir-loading></ng-dir-loading>
+
+	<ng-dir-loginform ng-show="loginPop"></ng-dir-loginform>
+
+	<ng-dir-signform ng-show="signPop"></ng-dir-signform>
+
+
+<section ng-show="!loading">
+		
+		<nav my-nav></nav>
+
+
+
+<br><br>
+
+
+<h1>User site</h1>
+
+
+<ul>
+	<li><a title="">My projects</a></li>
+	<li><a href title="">Logout</a></li>
+	<li><a href title="">My profile</a></li>
+</ul>
+
+<ul class="projects-list">
+	<li class="project-min-view" data-min-image="http://placehold.it/150x200">
+		<a ng-href="#/user/{{userId}}/{{pId}}" title="">
+			<span class="project-tag">{{pIdName}}</span>
+			<span class="project-expand"><i class="fa fa-arrows-alt fa-2x"></i></span>
+		</a>
+	</li>
+	<li class="project-min-view" data-min-image="http://placehold.it/150x200">
+		<a href="#" title="">
+			<span class="project-tag">Awesome project</span>
+			<span class="project-expand"><i class="fa fa-arrows-alt fa-2x"></i></span>
+		</a>	
+	</li>
+	<li class="project-min-view" data-min-image="http://placehold.it/150x200">
+		<a href="#" title="">
+			<span class="project-tag">Awesome project</span>
+			<span class="project-expand"><i class="fa fa-arrows-alt fa-2x"></i></span>
+		</a>	
+	</li>
+	<li class="project-min-view" data-min-image="http://placehold.it/150x200">
+		<a href="#" title="">
+			<span class="project-tag">Awesome project</span>
+			<span class="project-expand"><i class="fa fa-arrows-alt fa-2x"></i></span>
+		</a>	
+	</li>
+	<li class="project-min-view" data-min-image="http://placehold.it/150x200">
+		<a href="#" title="">
+			<span class="project-tag">Awesome project</span>
+			<span class="project-expand"><i class="fa fa-arrows-alt fa-2x"></i></span>
+		</a>	
+	</li>
+	<li class="project-min-view" data-min-image="http://placehold.it/150x200">
+		<a href="#" title="">
+			<span class="project-tag">Awesome project</span>
+			<span class="project-expand"><i class="fa fa-arrows-alt fa-2x"></i></span>
+		</a>	
+	</li>
+</ul>
+<br><br>
+
+		<pre ng-show="false" ng-repeat="ob in objects.posts">
+			{{ob | json}}
+		</pre>
+
+<br><br>
+<br><br>
+
+
+<pre ng-show="false">
+	{{objects[1] | json}}
+</pre>
+
+</section>
+
+<footer style="background: #333; color: #fff;" ng-show="!loading">
+	<ng-dir-footer></ng-dir-footer>
+</footer>

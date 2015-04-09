@@ -263,17 +263,41 @@ article:not(#header) div span {
 .comment-score i {
 	cursor: pointer;
 }
-.comment-score i.fa-plus {
+/*.comment-score i.fa-plus {
 	color: #66FF33;
 	font-size: 0.7em;
-}
+}*/
 .comment-score span.score-score {
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
-.comment-score i.fa-minus {
+.comment-score i.fa-heart-o {
+	color: #333;
+	font-size: 1.1em;
+}
+@keyframes heartoAnimation {
+	0% {
+		color: #333;
+	}
+	25% {
+		color: #beffa9;
+	}
+	50% {
+		color: #66FF33;
+	}
+	75% {
+		color: #beffa9;
+	}
+}
+.comment-score span i.fa-heart-o:hover {
+	animation: 2s heartoAnimation infinite;
+}
+
+
+
+/*.comment-score i.fa-minus {
 	color: #FF6666;
 	font-size: 0.7em;
-}
+}*/
 .commentArea .comment-list p.comment-signature {
 	font-size: 0.8em;
 	margin-top: 10px;
@@ -305,7 +329,7 @@ article:not(#header) div span {
 	top: 200px;
 }
 #sdsdadasd {
-	left: 200px;
+	left: 500px;
 	top: 10px;
 }
 

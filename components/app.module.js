@@ -63,6 +63,8 @@ var app = angular.module("my-app", ['ngRoute', 'firebase']);
 			}
 		};
 
+		
+
 		// var postsRef = ref.child("posts");
 		// new pushing ( child - {} )
 

@@ -209,9 +209,23 @@ article:not(#header) div span {
 }
 	/*pins */
 
+@keyframes borderAnimation {
+	0% {
+		border: 3px solid #fff;
+	}
+	25% {
+		border: 3px solid #eaa292; 
+	}
+	50% {
+		border: 3px solid #D64525;
+	}
+	75% {
+		border: 3px solid #eaa292; 
+	}
+}
 .pinContainer {
 	position: absolute;
-	background: #2351A3;
+	background: #FB2E01;
 	width: 30px;
 	height: 20px;
 	border-radius: 50px;
@@ -219,6 +233,10 @@ article:not(#header) div span {
 	padding-top: 8px;
 	font-size: 0.8em;
 	cursor: pointer;
+	border: 3px solid #fff;
+}
+.pinContainer:hover {
+	animation: 2s borderAnimation infinite;
 }
 .commentArea {
 	border: 1px solid #333;
@@ -257,23 +275,18 @@ article:not(#header) div span {
 	font-size: 0.7em;
 }
 .commentArea .comment-list p.comment-signature {
-	font-size: 0.7em;
+	font-size: 0.8em;
 	margin-top: 10px;
 	border: 1px solid orangered;
 	border-radius: 5px 5px;
 	padding: 5px 5px;
-	text-align: right;
+	text-align: left;
 }
-/*.commentArea input {*/
-	/*width: 80%;*/
-	/*padding: 10px 15px;*/
-	/*outline: none;*/
-	/*border: none;*/
-/*}*/
 .comments-container {
 	min-height: 0px;
 	max-height: 200px;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .commentArea input, .commentArea textarea {
 	width: 85%;
@@ -292,7 +305,7 @@ article:not(#header) div span {
 	top: 200px;
 }
 #sdsdadasd {
-	left: 500px;
+	left: 200px;
 	top: 10px;
 }
 

@@ -51,13 +51,17 @@ var app = angular.module("my-app", ['ngRoute', 'firebase']);
 		$scope.username = "Kowalski";
 		$scope.userId = '52323';
 		$scope.pId = '42u2jhc';
-		$scope.pIdName = 'So awesome project'
-
-		//
-		//
+		$scope.pIdName = 'So awesome project';
+		$scope.commentText = "Lorem dolorem ipsum isnt so bad...";
+		$scope.commentScore = '6';
 		$scope.statusClick = false;
-
-
+		$scope.score = 5;
+		$scope.statusClickS = function() {
+			if ($scope.statusClick === false) {
+				$scope.score = $scope.score + 1;
+				$scope.statusClick = true;
+			}
+		};
 
 		// var postsRef = ref.child("posts");
 		// new pushing ( child - {} )

@@ -274,20 +274,7 @@ article:not(#header) div span {
 	color: #333;
 	font-size: 1.1em;
 }
-@keyframes heartoAnimation {
-	0% {
-		color: #333;
-	}
-	25% {
-		color: #beffa9;
-	}
-	50% {
-		color: #66FF33;
-	}
-	75% {
-		color: #beffa9;
-	}
-}
+
 .comment-score span i.fa-heart-o:hover {
 	animation: 2s heartoAnimation infinite;
 }
@@ -352,4 +339,22 @@ article:not(#header) div span {
 }
 .displayNone {
 	display: none;
+}
+
+
+
+/*brenchowanie ?? */
+@keyframes heartoAnimation {
+	0% {
+		color: #333;
+	}
+	25% {
+		color: #beffa9;
+	}
+	50% {
+		color: #66FF33;
+	}
+	75% {
+		color: #beffa9;
+	}
 }
